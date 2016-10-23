@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal website of Duy Nguyen, a PhD
+  student at UW-Madison">
+  <meta name="author" content="Duy Nguyen">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <title>Duy Nguyen</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container">
+
+    <div class="row" style="padding:20px">
+
+       <div class="hidden-xs col-sm-3 col-md-2" id="sidebar" role="navigation" style="margin-top:180px">
+        <hr>
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="cv.pdf">CV</a></li>
+          <li><a href="#papers">Papers</a></li>
+          <li><a href="#software">Software</a></li>
+          <li><a href="#reports">Technical Reports</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+      </div>
+
+      <div class="col-xs-12 col-sm-9 col-md-9">
+
+        <div class="row">
+<!--          <img src="img/duy.JPG" class="pull-left" style="margin:30px
+          20px 20px 0; height:180px; width:180px; border-radius:100%"/>
+              -->
+		 <img src="img/duy.JPG" alt="photo" align="left" height="50" width="50" style="margin:30px
+          20px 20px 0; height:180px; width:180px; border-radius:100%">
+
+          <h1>Duy Nguyen</h1>
+          <p class="lead">
+            Statistics Ph.D. Student at UW-Madison<br>
+            dnguyen@stat.wisc.edu
+            <br>
+            <a href="https://twitter.com/duynguyenuw" class="icon">
+              <i class="fa fa-twitter fa-lg"></i>
+            </a>
+            <a href="https://github.com/duydnguyen" class="icon">
+              <i class="fa fa-github fa-lg"></i>
+            </a>
+            <a href="https://duyptnk.wordpress.com/" class="icon blog">Blog</a>
+			</a>
+            <a href="https://scholar.google.com/citations?user=hWoeZwgAAAAJ&hl=en&authuser=1" class="icon blog">GoogleScholar</a>
+          </p>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <p>
+          I am a Ph.D. student in Statistics at UW-Madison, where I am advised
+          by
+          <a href="https://www.biostat.wisc.edu/content/keles-sunduz">Sunduz Keles</a>. I work in the fields of machine learning, genomics, and statistical analysis for Next Generation Sequencing Data. 
+        </div>
+
+        <div class="row">
+          <h2><a name="papers"></a>Papers</h2>
+          <hr>
+          <div class="col-md-12">
+            <div class="col-md-2">
+              <img src="img/aaai.jpg"
+                style="width:170px;float:right;"/>
+            </div>
+            <div class="col-md-10">
+              <p>
+                <h4>Stochastic Multiresolution Persistent Homology Kernel</h4> 
+				We extract topological information from point-cloud objects as a novel feature representation for
+				clustering and classification. Specially, we introduce a Stochastic Multiresolution Persistent Homology
+				(SMURPH) kernel which represents an object's persistent homology at different resolutions. Under the
+				SMURPH kernel two objects are similar if they have similar numbers of and sizes of holes at the same
+				resolutions, even if other aspects of the point-cloud differ. Our multiresolution kernel captures both
+				global topology and fine-grained "topological texture" in the data. Compared to existing topological
+				data analysis methods the SMURPH kernel is computationally feasible on large point-clouds. The kernel
+				can be directly plugged into standard kernel machines, and can be combined with other kernels. We
+				demonstrate SMURPH's potentials with two real-world applications: fundus photography for eye disease
+				classification and wearable sensing for human activity recognition. SMURPH brings new information to
+				machine learning and opens the door for wider adoption of topological data analysis.
+                <br>
+                Xiaojin Zhu, Ara Vartanian, Manish Bansal, <strong>Duy Nguyen</strong>, Luke Brandl<br>
+                <em>International Joint Conference on Artificial Intelligence (IJCAI'16, accepted)</em>, Acceptance rate < 25%                
+
+              </p>
+            </div>
+
+			<hr>
+          <div class="col-md-12">
+            <div class="col-md-2">
+              <img src="img/usenix.jpg"
+                style="width:170px;float:right;"/>
+            </div>
+            <div class="col-md-10">
+              <p>
+                <h4>Reducing File System Tail Latencies with Chopper</h4> 
+					We present Chopper, a tool that efficiently explores the
+					vast input space of file system policies to find behaviors
+					that lead to costly performance problems. We focus
+					specifically on block allocation, as unexpected poor
+					layouts can lead to high tail latencies. Our approach
+					utilizes sophisticated statistical methodologies, based on
+					Latin Hypercube Sampling (LHS) and sensitivity analysis,
+					to explore the search space efficiently and diagnose
+					intricate design problems. We apply Chopper to study the
+					overall behavior of two file systems, and to study Linux
+					ext4 in depth. We identify four internal design issues in
+					the block allocator of ext4 which form a large tail in the
+					distribution of layout quality. By removing the underlying
+					problems in the code, we cut the size of the tail by an
+					order of magnitude, producing consistent and satisfactory
+					file layouts that reduce data access latencies.
+                <br>
+				Jun He, <strong>Duy Nguyen</strong>, Andrea C. Arpaci-Dusseau, Remzi H. Arpaci-Dusseau                
+                <em>The 13th USENIX Conference on File and Storage Technologies (FAST '15)</em>, Acceptance rate 28/130 = 21.5% 
+				<div class="btn-group-xs">
+                  <a href="https://www.usenix.org/system/files/conference/fast15/fast15-paper-he.pdf"
+                  class="btn btn-default">Paper</a>
+                  <a href="https://github.com/junhe/chopper/releases"
+                  class="btn btn-default">Code</a>
+                </div>               
+              </p>
+            </div>
+
+			<hr>
+          <div class="col-md-12">
+            <div class="col-md-2">
+              <img src="img/tamc.jpg"
+                style="width:170px;float:right;"/>
+            </div>
+            <div class="col-md-10">
+              <p>
+                <h4>Learning From Non-i.i.d. Data: Fast Rate for the One-vs-All Multiclass Plug-in Classifier</h4> 
+					We prove new fast learning rates for the one-vs-all multiclass plug-in classifiers 
+					trained either from exponentially strongly mixing data or from data generated by a 
+					converging drifting distribution. These are two typical scenarios where training data are not 
+					iid. The learning rates are obtained under a multiclass version of Tsybakov's margin 
+					assumption, a type of low-noise assumption, and do not depend on the number of classes. 
+					Our results are general and include a previous result for binary-class plug-in classifiers
+                <br>
+				V Dinh, LST Ho, NV Cuong, <strong>Duy Nguyen</strong>, BT Nguyen				               
+                <em>Theory and Applications of Models of Computation</em>, 2015  
+				<div class="btn-group-xs">
+                  <a href="http://link.springer.com/chapter/10.1007/978-3-319-17142-5_32#page-1"
+                  class="btn btn-default">Paper</a>                 
+                </div>               
+              </p>
+            </div>
+
+          </div>
+
+		
+		<div class="row">
+          <h2><a name="software"></a>Software</h2>
+			
+			<div class="col-md-4">            
+            <p>
+            <!-- <h3>Automatic Variational Inference</h3><br> -->
+              
+              Check it out on <a
+              href="https://github.com/duydnguyen">Github</a>.
+            </p>
+          </div>
+
+		</div>
+
+		<div class="row">
+          <h2><a name="reports"></a>Technical Reports</h2>
+			<ul> 
+			<li> D. Nguyen, Sunduz Keles. Identifying differential enrichment in histone modification sites from ChIP-seq data.
+			</li></ul>
+
+			<ul> 
+			<li> D. Nguyen, Peter Qian. Sampling Properties of Sudoku-based Space-Filling Designs. 
+			</li></ul>
+
+			<ul> 
+			<li> D. Nguyen. Regression Analysis on Poker Models. (Undergraduate Thesis)
+			</li></ul>
+
+			<ul> 
+			<li> L. Buggy, A. Culiuc, K. McCall, D. Nguyen. Energy of Graphs and Matrices. (NSF-REU paper)
+			</li></ul>
+		</div>
+		
+
+       <div class="row">
+          <h2><a name="education"></a>Education</h2>
+			<table border="0" cellpadding="1" cellspacing="1" style="width: 1000px;">
+				<tbody>
+					<tr>
+						<td>
+							2012-Present</td>
+						<td>
+							&nbsp;Ph.D. in Statistics, University of Wisconsin-Madison</td>
+					</tr>
+					<tr>
+						<td>
+							2010-2012</td>
+						<td>
+							&nbsp;M.S. in Mathematics, Texas Christian University</td>
+					</tr>
+					<tr>
+						<td>
+							2007-2010</td>
+						<td>
+							&nbsp;B.S. in Mathematics, Summa Cum Laude, Phi Beta Kappa, Texas Christian University</td>
+					</tr>
+					<tr>
+						<td>
+							2007-2010</td>
+						<td>
+							&nbsp;B.M. in Piano Performance, Summa Cum Laude, Texas Christian University</td>
+					</tr>
+				
+				</tbody>
+			</table>     
+        </div> 
+
+  </div>
+ </div>
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript"
+     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>
